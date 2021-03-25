@@ -3,7 +3,8 @@
 :root {
   --clr-primary: 	hsla(218, 82%, 51%, 1);
   --clr-gold: 	hsla(46, 97%, 72%, 1);
-  --clr-accent: 	hsla(47, 100%, 96%, 0.2);
+  --clr-accent: 	hsla(47, 100%, 96%, 1);
+  --clr-lightAccent: 	hsla(47, 100%, 96%, 0.2);
   --clr-smoke: 	hsla(0, 0%, 96%, 1);
   --clr-lightGray: 	hsla(0, 0%, 0%, 0.2);
   --clr-black: 	hsla(0, 0%, 0%, 1);
@@ -116,13 +117,15 @@ input + button {
   background-color: var(--clr-gold);
 }
 
-.bg-accent {
-  background-color: var(--clr-accent);
+.bg-light-accent {
+  background-color: var(--clr-lightAccent);
 }
 
 .light-bold {
   font-weight: 400;
 }
+
+/* HERO / Header Section Styles */
 
 .bold {
   font-weight: 700;
@@ -145,10 +148,6 @@ input + button {
   align-items: center;
 }
 
-/* header > h1 {
-  max-width: 40rem;
-} */
-
 #trail-text {
   margin-top: 1.2em;
 }
@@ -157,9 +156,12 @@ input + button {
   text-align:center;
 }
 
-.site-preview-image {
+.site-preview-image,
+.live-support-chat-image {
   width: min(90%, 50rem);
 }
+
+/* Customer Display Section Styles */
 
 .customers,
 .thrivedesk-tile-container {
@@ -173,10 +175,11 @@ input + button {
   margin-left: 1rem;
 }
 
+/* Thrivedesk Intro Section Styles */
+
 .thrivedesk-tile-container {
   position: relative;
   /* background-color: pink; */
-
 }
 
 #startup-card,
@@ -207,7 +210,7 @@ input + button {
   background-color: var(--clr-smoke);
   position: absolute;
   top: 6rem;
-  right: 0rem;
+  right: 1rem;
   z-index: 1;
 }
 
@@ -223,6 +226,10 @@ input + button {
 .thrivedesk-tile-container > p {
   margin-top: 3em;
   padding: 0 2em;
+}
+
+.live-support-chat-image {
+  margin-bottom: 3rem; /* Might have to adjust this when in full screen. Will alter the spacing */
 }
 
 .feature-container > h3 {
