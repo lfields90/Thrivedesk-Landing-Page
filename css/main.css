@@ -97,7 +97,7 @@ input + button {
 
 .container {
   margin-inline: auto;
-  width: min(80%, 70.5rem);
+  width: min(85%, 70.5rem);
 }
 
 .flex {
@@ -130,6 +130,12 @@ input + button {
   font-weight: 400;
 }
 
+.site-preview-image,
+.live-support-chat-image,
+.knowledge-base-image {
+  width: min(90%, 50rem);
+}
+
 /* HERO / Header Section Styles */
 
 .bold {
@@ -137,8 +143,7 @@ input + button {
 }
 
 .logo {
-  height: 40px;
-  padding-bottom: 0.3rem;
+  width: 4rem;
 }
 
 .navigation {
@@ -164,11 +169,6 @@ input + button {
   text-align:center;
 }
 
-.site-preview-image,
-.live-support-chat-image {
-  width: min(90%, 50rem);
-}
-
 /* Customer Display Section Styles */
 
 .customers,
@@ -180,7 +180,7 @@ input + button {
   display: inline-block;
   max-width: 15%;
   vertical-align: middle;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 /* Thrivedesk Intro Section Styles */
@@ -260,12 +260,32 @@ input + button {
   margin: .5rem;
 }
 
-.feature-card img {
+.feature-card img,
+.reporting-card img {
   height: 2rem;
 }
 
 
 /* Reporting Section Styles */
+
+.kpi-image {
+  display: none;
+}
+
+.reporting-card img,
+.reporting-card h4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.reporting-card h4 {
+  margin-bottom: 0;
+  padding: 0.5em 0 0 0.5em;
+}
+
+.reporting-card p {
+  margin-top: 0.9em;
+}
 
 .active {
   border: 2px solid var(--clr-primary);
@@ -278,8 +298,24 @@ input + button {
   margin-bottom: 0;
 }
 
+.active.reporting-card {
+  /* background-image: url(images/character 1.svg); IDK how to do this*/
+}
+
 
 /* Knowledge Section Styles */
+
+.knowledge-base-images img:nth-child(2) {
+  display: none; /* Only doing this to hide the alt and image space until I get the appropraite assets*/
+}
+
+
+
+
+
+@media (min-width:600px) {
+
+}
 
 
 /* @media (min-width: 40em) {
