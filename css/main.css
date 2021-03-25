@@ -8,6 +8,7 @@
   --clr-smoke: 	hsla(0, 0%, 96%, 1);
   --clr-lightGray: 	hsla(0, 0%, 0%, 0.2);
   --clr-black: 	hsla(0, 0%, 0%, 1);
+  --clr-white: 	hsla(0, 0%, 100%, 1);
 
   --ff-primary: 'Roboto', sans-serif;
 }
@@ -77,7 +78,7 @@ button {
   border: 0.1rem solid var(--clr-black);
   border-radius: 1.6rem 0 1.6rem 1.6rem;
   padding: 0.4rem 0.6rem;
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 
 input {
@@ -121,6 +122,10 @@ input + button {
   background-color: var(--clr-lightAccent);
 }
 
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+
 .light-bold {
   font-weight: 400;
 }
@@ -141,6 +146,9 @@ input + button {
   margin-bottom: 2.5em;
 }
 
+.navigation button {
+  margin-bottom: 0;
+}
 
 .navigation.flex {
   flex-direction: row;
@@ -188,7 +196,6 @@ input + button {
   height: 9rem;
   width: 9rem;
   margin: 0 auto;
-
 }
 
 #startup-card {
@@ -228,15 +235,37 @@ input + button {
   padding: 0 2em;
 }
 
+/* Live Chat Section Styles */
+
 .live-support-chat-image {
   margin-bottom: 3rem; /* Might have to adjust this when in full screen. Will alter the spacing */
+}
+
+
+/* Feature Section Styles */
+
+.feature-container {
+  border-radius: .5rem;
+  padding: 1rem;
 }
 
 .feature-container > h3 {
   font-weight: 100;
 }
 
+.feature-card {
+  background: var(--clr-white);
+  border-radius: .5rem;
+  padding: 1rem 3rem;
+  margin: .5rem;
+}
 
+.feature-card img {
+  height: 2rem;
+}
+
+
+/* Reporting Section Styles */
 
 .active {
   border: 2px solid var(--clr-primary);
@@ -249,6 +278,8 @@ input + button {
   margin-bottom: 0;
 }
 
+
+/* Knowledge Section Styles */
 
 
 /* @media (min-width: 40em) {
