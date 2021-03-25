@@ -3,7 +3,7 @@
 :root {
   --clr-primary: 	hsla(218, 82%, 51%, 1);
   --clr-gold: 	hsla(46, 97%, 72%, 1);
-  --clr-accent: 	hsla(47, 100%, 96%, 1);
+  --clr-accent: 	hsla(47, 100%, 96%, 0.2);
   --clr-smoke: 	hsla(0, 0%, 96%, 1);
   --clr-lightGray: 	hsla(0, 0%, 0%, 0.2);
   --clr-black: 	hsla(0, 0%, 0%, 1);
@@ -104,6 +104,30 @@ input + button {
   /* flex-wrap: wrap; */
 }
 
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-black {
+  color: var(--clr-black);
+}
+
+.bg-gold {
+  background-color: var(--clr-gold);
+}
+
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+
+.light-bold {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 .logo {
   height: 40px;
   padding-bottom: 0.3rem;
@@ -133,7 +157,12 @@ input + button {
   text-align:center;
 }
 
-.customers {
+.site-preview-image {
+  width: min(90%, 50rem);
+}
+
+.customers,
+.thrivedesk-tile-container {
   padding: 2em 0;
 }
 
@@ -144,25 +173,67 @@ input + button {
   margin-left: 1rem;
 }
 
+.thrivedesk-tile-container {
+  position: relative;
+  /* background-color: pink; */
+
+}
+
+#startup-card,
+#support-card,
+#wordpress-card {
+  height: 9rem;
+  width: 9rem;
+  margin: 0 auto;
+
+}
+
+#startup-card {
+  background-color: var(--clr-gold);
+  position: relative;
+  top: 2rem;
+  right: 6rem;
+  z-index: 3;
+}
+
+#support-card {
+  background-color: var(--clr-primary);
+  color: var(--clr-gold);
+  position: relative;
+  z-index: 2;
+}
+
+#wordpress-card {
+  background-color: var(--clr-smoke);
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+  z-index: 1;
+}
+
+.thrivedesk-tile-container img {
+  height: 3rem;
+}
+
+.thrivedesk-tile-container > div {
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.thrivedesk-tile-container > p {
+  margin-top: 3em;
+  padding: 0 2em;
+}
+
 .feature-container > h3 {
   font-weight: 100;
 }
 
-.clr-primary {
-  color: var(--clr-primary);
-}
 
-.clr-black {
-  color: var(--clr-black);
-}
-
-.bg-gold {
-  background-color: var(--clr-gold);
-}
 
 .active {
   border: 2px solid var(--clr-primary);
-  border-radius: 25px;
+  border-radius: 1.5rem;
   padding: 1em;
 }
 
@@ -171,13 +242,6 @@ input + button {
   margin-bottom: 0;
 }
 
-.light-bold {
-  font-weight: 400;
-}
-
-.bold {
-  font-weight: 700;
-}
 
 
 /* @media (min-width: 40em) {
