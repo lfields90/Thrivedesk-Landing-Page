@@ -92,12 +92,13 @@ input::placeholder {
 }
 
 input + button {
-  margin-left: -1rem;
+  margin-left: -1.5rem;
+  padding: 0.55rem 0.6rem 0.45rem 0.6rem;
 }
 
 .container {
   margin-inline: auto;
-  width: min(85%, 70.5rem);
+  width: min(90%, 70.5rem);
 }
 
 .flex {
@@ -133,7 +134,7 @@ input + button {
 .site-preview-image,
 .live-support-chat-image,
 .knowledge-base-image {
-  width: min(90%, 50rem);
+  width: min(100%, 50rem);
 }
 
 /* HERO / Header Section Styles */
@@ -178,9 +179,9 @@ input + button {
 
 .customers img {
   display: inline-block;
-  max-width: 15%;
+  max-width: 14%;
   vertical-align: middle;
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
 }
 
 /* Thrivedesk Intro Section Styles */
