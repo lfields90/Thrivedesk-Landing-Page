@@ -102,6 +102,10 @@ input + button {
   margin-inline: auto;
   width: min(80%, 50rem);
 }
+.background-image-container {
+  margin-inline: auto;
+  width: min(95%, 55rem);
+}
 
 .flex {
   display: flex;
@@ -180,7 +184,7 @@ input + button {
 }
 
 header p {
-  max-width: 35rem;
+  max-width: 30rem;
   margin-inline: auto;
   margin-bottom: 2em;
 }
@@ -363,10 +367,19 @@ header p {
   }
 }
 
-
 @media (min-width:768px) {
   /* General Responsive Style Updates  */
-
+  .background-image-container {
+    background-image:
+      url(../images/character-16.svg),
+      url(../images/character-12.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 22% left 2%, bottom 25% right 2%;
+    background-size: 6.5em;
+  }
+  header h1+p {
+    width: min(70%, 35rem);
+  }
   .mobile-navigation {
     display: none;
   }
