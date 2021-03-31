@@ -375,7 +375,7 @@ header p {
       url(../images/character-12.svg);
     background-repeat: no-repeat;
     background-position: bottom 22% left 2%, bottom 25% right 2%;
-    background-size: 6.5em;
+    background-size: 5.5em;
   }
   header h1+p {
     width: min(70%, 35rem);
